@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="AFP - News.exe" version="1.0.0.0" publicKeyToken="eddfd82e4206a0b8" language="neutral" processorArchitecture="x86" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="AFP - News" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
+    <commandLine file="AFP - News.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          Options de manifeste UAC
+          Pour changer le niveau du contrôle de compte d'utilisateur Windows, remplacez le
+          nœud requestedExecutionLevel par l'une des propositions suivantes.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         Pour utiliser la virtualisation des fichiers et du Registre afin d'assurer
+         une compatibilité ascendante, supprimez le nœud requestedExecutionLevel.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="AFP - News.exe" size="7656">
+      <assemblyIdentity name="AFP - News" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>V3/5Pv29EZPEG0rvUc04QMbBOZx7kEhZ9tDZrwNG50A=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.Toolkit.Uwp.Notifications.dll" size="113696">
+      <assemblyIdentity name="Microsoft.Toolkit.Uwp.Notifications" version="6.1.0.0" publicKeyToken="4AFF67A105548EE2" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>FfJt2U1KgT/cIV2QMr+rpOGsZ3wPYUIkKG6PnRpmWks=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="QueryString.NETCore.dll" size="11264">
+      <assemblyIdentity name="QueryString.NETCore" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>gPQsmUdvspDM/jwrQBYm7sLLb8ZWlBYo/IHqH5vfzIc=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="System.ValueTuple.dll" size="25232">
+      <assemblyIdentity name="System.ValueTuple" version="4.0.3.0" publicKeyToken="CC7B13FFCD2DDD51" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>6QXRAlhbIsbfBPIZr1y9v6e8Fll56XiLYt9tzBZeEPQ=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="AFP - News.exe.config" size="187">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>+CM46OnHRrXZXNLMx7+U3V3iubiYL//d8hGOR13lDhU=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=MATTEO-COMPUTER\Matteo" issuerKeyHash="b83fe9b409f0efaf14ddf08d8de8a2b7d2466d06" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>T4blYOGyMqx9GrGaZZaHYGQfPILfacLCubT1UcpxdxI=</DigestValue></Reference></SignedInfo><SignatureValue>Uh/oI7QQPo+H8x1FWQaj/b6sZEeTIIC/VA9f2XcXpb+bdCm5E7ACFjheX7yd9x37LaUquWPjyrft0iHcm4nvlhKr7QjTEfW8uiRVddARtroXqalucfhmz1qoW7BalROk0Q+WmYG1eBWVorEpncm2Wn1Br7S/KpW4zo+xNoIYvrM=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>o0dEjzyDYywQ76Ox1udKQyjBW8Ckyms3R8cM4xCyyKrYUt1NgISj0O7cTFA5v8MSoYPIqNg5YRxBSaR4DADzDNrrg9ulh2684yUu6JwkP/13IBzgmBFgnE+Zx7UlERv1U11BjVQMisryTHY7IkEEE1r1RShXtAk8+U2wy0YMo00=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="127771ca51f5b4b9c2c269df823c1f64608796659ab11a7dac32b2e160e5864f" Description="" Url=""><as:assemblyIdentity name="AFP - News.exe" version="1.0.0.0" publicKeyToken="eddfd82e4206a0b8" language="neutral" processorArchitecture="x86" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=MATTEO-COMPUTER\Matteo</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>ZmBEAMdsY8EwPJk/RY+ALdFsCziDMC3kAWQUdyqq5yM=</DigestValue></Reference></SignedInfo><SignatureValue>bEoNXBWi71QB/O+Fsy8+Af67B2V12ZjJiroysSSck4/P2uzmW4v4ykz1fvXz/LtCh5ORNuu1bFs2bbJ0qnWy1aFV6NS9s1OUR5VYIb0/saiXIGLNWtTiDc0rZAkWRpobdS4sZa7ct6Vw5WqrZzze0io7/UzN3hkG6ThvRHlXk00=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>o0dEjzyDYywQ76Ox1udKQyjBW8Ckyms3R8cM4xCyyKrYUt1NgISj0O7cTFA5v8MSoYPIqNg5YRxBSaR4DADzDNrrg9ulh2684yUu6JwkP/13IBzgmBFgnE+Zx7UlERv1U11BjVQMisryTHY7IkEEE1r1RShXtAk8+U2wy0YMo00=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB8TCCAVqgAwIBAgIQEeE62iisHLFNGZcVO58EnzANBgkqhkiG9w0BAQsFADA3MTUwMwYDVQQDHiwATQBBAFQAVABFAE8ALQBDAE8ATQBQAFUAVABFAFIAXABNAGEAdAB0AGUAbzAeFw0yMTAyMTMxNDU2MTZaFw0yMjAyMTMyMDU2MTZaMDcxNTAzBgNVBAMeLABNAEEAVABUAEUATwAtAEMATwBNAFAAVQBUAEUAUgBcAE0AYQB0AHQAZQBvMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCjR0SPPINjLBDvo7HW50pDKMFbwKTKazdHxwzjELLIqthS3U2AhKPQ7txMUDm/wxKhg8io2DlhHEFJpHgMAPMM2uuD26WHbrzjJS7onCQ//XcgHOCYEWCcT5nHtSURG/VTXUGNVAyKyvJMdjsiQQQTWvVFKFe0CTz5TbDLRgyjTQIDAQABMA0GCSqGSIb3DQEBCwUAA4GBADE+fhMzCVHMJfFbR1RvSD2PmK+iZdWp7ogQlPNpT0YkAnyuprwd9ZzHndSPZ02rgIuZ/dnoiQl0ZGnf2EYCF4n2K6gPIXahohLRugNoX+zfy8fI6UpC0s75TRecLnG0QZO7hTUMmR9m/WcMnddeOmCTpzaUFrDkwaEUVCk04XIP</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
